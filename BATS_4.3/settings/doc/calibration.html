@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive">
+		<title>Untitled Page</title>
+		<link href="file:///Macintosh HD/Users/lukas/Documents/workspace/Bats/settings/doc/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+	</head>
+
+	<body bgcolor="#ffffff">
+		<table width="600" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td colspan="3" width="600">
+					<h1>Calibration of radiocarbon ages</h1>
+					<h3>Interpolation</h3>
+					<p>The files for the calibration curve usually have a different resolution to the internal storage resolution and so some form of interpolation is needed. This can either be linear or a cubic function depending on the setting in the system options (<em class="cit">calib.xml: calib/linear</em>). The cubic interpolation does not fit a spline function as this is very time consuming to calculate and can have some undesirable features such as large excursions between points. The cubic function used here gives a smooth curve with a continuous first differential but gives very little overall difference from the linear interpolation. The form of the function between two points is simply defined by the four surrounding points. If fj defines the function at tj the interpolation between tj and tj+1 is given by f(t) where:</p>
+<p>&nbsp;</p>
+<h3>Calendar and BP dates</h3>
+					<p>Output and input can be given in terms of calendar years yCAL (AD/BC) or years before 1950 yBP (cal BP). The relationship between these is:<br>
+					  yCAL = 1950 - yBP (for AD)</p>
+                    <p>yCAL = yBP - 1951 
+                      (for BC)</p>
+                  <p></p>
+<p>It should be noted that this does imply that there is no year 0 in the AD/BC sequence (which is correct). The OxCal program handles the problme of the no-existing year 0 differently (BC ages are</p>
+<p>Radiocarbon calibration</p>
+				  <p>The radiocarbon calibration itself is performed (using the verb R_Date) by a comparison of the measured radiocarbon age to the values stored in the curve (the methods used are similar to those used by Stuiver and Reimer 1993 and van der Plicht 1993; also see Dekling and van der Plicht 1993; the error terms in the calibration curve are taken into account as in the latest versions of CALIB). This allows a variance distribution to be calculated: if the radiocarbon date is rm with a measurement error sigmam the variance distribution vi and the probability distribution pi are then given by:<br>
+				  </p>
+					<p>In this program the distribution is left normalised to a maximum of 1 rather than the actual probability of any individual year.</p>
+					<p>NOTE This is different to old versions of OxCal (pre 3.2) where pi was simply set to exp(-vi/2).</p>
+					<p>&nbsp;</p>
+			    <p></p>
+					<p></p>
+				</td>
+		  </tr>
+			<tr>
+				<td colspan="3" width="600">
+					<p>&nbsp;</p>
+					<hr noshade size="1" color="#000080">
+				</td>
+			</tr>
+			<tr>
+				<td width="200">
+					<div align="left">
+						<i><span class="last">13.03.2008</span></i></div>
+				</td>
+				<td width="200"></td>
+				<td width="200">
+					<div align="right">
+						<i><span class="last">by Lukas Wacker</span></i></div>
+				</td>
+			</tr>
+		</table>
+	</body>
+
+</html>

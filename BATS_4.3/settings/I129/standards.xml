@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<standard date="Thu Feb 10 10:56:46 CET 2022">
+  <std name="D22">
+    <ra>50.3726</ra>
+    <ra_sig>0.003</ra_sig>
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta />
+    <delta_nom />
+    <delta_sig />
+    <F14C />
+    <F14C_sig />
+    <active>false</active>
+    <blank>false</blank>
+  </std>
+  <std name="E1">
+    <ra>4.88</ra>
+    <ra_sig>0.1</ra_sig>
+    <ba>1.0</ba>
+    <ba_nom>0.1</ba_nom>
+    <ba_sig />
+    <delta />
+    <delta_nom />
+    <delta_sig />
+    <F14C />
+    <F14C_sig />
+    <active>false</active>
+    <blank>false</blank>
+  </std>
+  <std name="C2dil">
+    <ra>4.513</ra>
+    <ra_sig>0.087</ra_sig>
+    <ba>1.0</ba>
+    <ba_nom />
+    <ba_sig>0.1</ba_sig>
+    <delta />
+    <delta_nom />
+    <delta_sig />
+    <F14C />
+    <F14C_sig />
+    <active>false</active>
+    <blank>false</blank>
+  </std>
+  <std name="C2dil_21">
+    <ra>5.055</ra>
+    <ra_sig>0.068</ra_sig>
+    <ba>1.0</ba>
+    <ba_nom />
+    <ba_sig>0.1</ba_sig>
+    <delta />
+    <delta_nom />
+    <delta_sig />
+    <F14C />
+    <F14C_sig />
+    <active>true</active>
+    <blank>false</blank>
+  </std>
+  <std name="C2conc">
+    <ra>38.995</ra>
+    <ra_sig>0.467</ra_sig>
+    <ba>1.0</ba>
+    <ba_nom />
+    <ba_sig>0.1</ba_sig>
+    <delta />
+    <delta_nom />
+    <delta_sig />
+    <F14C />
+    <F14C_sig />
+    <active>true</active>
+    <blank>false</blank>
+  </std>
+</standard>
+

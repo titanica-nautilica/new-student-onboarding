@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hv>
+  <run>   
+    <val name="date_hv2">Measuring date, time</val>
+    <val name="commentinfo">Files</val>
+     <val name="label">Sample Id</val>
+     <val name="posit">Sample position</val>    
+    <val name="sampletype">Sample description</val>
+    <val name="username">Operator</val>
+  </run>
+  <cycle>
+    <val name="cycle">0</val>
+    <val name="r">1</val>
+    <val name="runtime">2</val>
+    <val name="b_amp">6</val>
+    <val name="a_amp">9</val>
+    <val name="g1">15</val>
+  </cycle>
+</hv>

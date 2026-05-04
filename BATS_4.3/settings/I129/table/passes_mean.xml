@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<passes_mean date="Mon Aug 27 15:06:03 CEST 2018">
+  <column Nr="0">
+    <name><![CDATA[<html><br><br>pos</html>]]></name>
+    <value>posit</value>
+    <val-name>position</val-name>
+    <width>28</width>
+    <format />
+    <multi>1.0</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="1">
+    <name><![CDATA[<html><br><br>run</html>]]></name>
+    <value>run</value>
+    <val-name>run</val-name>
+    <width>82</width>
+    <format />
+    <multi>1.0</multi>
+    <edit>true</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="2">
+    <name><![CDATA[<html><br><br>comment</html>]]></name>
+    <value>commentinfo</value>
+    <val-name>commentinfo</val-name>
+    <width>110</width>
+    <format />
+    <multi>1.0</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="3">
+    <name><![CDATA[<html><br><br>label</html>]]></name>
+    <value>label</value>
+    <val-name>label</val-name>
+    <width>70</width>
+    <format />
+    <multi>1.0</multi>
+    <edit>true</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="4">
+    <name><![CDATA[<html><sup>127</sup>I<br>LE<br>(&micro;A)</html>]]></name>
+    <value>ana</value>
+    <val-name>127I current LE (µA)</val-name>
+    <width>40</width>
+    <format>#,##0.00</format>
+    <multi>1.0</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>5.0</high-limit>
+    <low-limit>0.5</low-limit>
+  </column>
+  <column Nr="5">
+    <name><![CDATA[<html>stripper pressure (mbar)</html>]]></name>
+    <value>strippr</value>
+    <val-name>stripper pressure (mbar)</val-name>
+    <width>40</width>
+    <format>#,##0.00</format>
+    <multi>1.0</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.05</high-limit>
+    <low-limit>0.05</low-limit>
+  </column>
+  <column Nr="6">
+    <name><![CDATA[<html><sup>127</sup>I<br>HE<br>(&micro;A)</html>]]></name>
+    <value>a</value>
+    <val-name>127I current (µA)</val-name>
+    <width>40</width>
+    <format>#,##0.00</format>
+    <multi>1.0</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>5.0</high-limit>
+    <low-limit>0.5</low-limit>
+  </column>
+  <column Nr="7">
+    <name><![CDATA[<html><sup>127</sup>I<br>trans.<br>(%)</html>]]></name>
+    <value>tra</value>
+    <val-name>transmission (127I)</val-name>
+    <width>52</width>
+    <format>#,##0.0</format>
+    <multi>1.0</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>55.0</high-limit>
+    <low-limit>45.0</low-limit>
+  </column>
+  <column Nr="8">
+    <name><![CDATA[<html><br><sup>129</sup>I</html>]]></name>
+    <value>r</value>
+    <val-name>129I</val-name>
+    <width>52</width>
+    <format>#,##0</format>
+    <multi>1.0</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="9">
+    <name><![CDATA[<html><br>err.<br></html>]]></name>
+    <value>r_err</value>
+    <val-name>error (abs)</val-name>
+    <width>50</width>
+    <format>#,##0.0</format>
+    <multi>1.0</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="10">
+    <name><![CDATA[<html><br><sup>129</sup>I<br>bg corr.</html>]]></name>
+    <value>r_cor</value>
+    <val-name>129I bg-corr.</val-name>
+    <width>52</width>
+    <format>#,##0</format>
+    <multi>1.0</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="11">
+    <name><![CDATA[<html><br>err.<br></html>]]></name>
+    <value>r_cor_err</value>
+    <val-name>error of 129I bg-corr.</val-name>
+    <width>50</width>
+    <format>#,##0.0</format>
+    <multi>1.0</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="12">
+    <name><![CDATA[<html><sup>129</sup>I/<sup>127</sup>I<br>unc.<br>(10<sup>-12</sup>)<br></html>]]></name>
+    <value>ra</value>
+    <val-name>129I/127I</val-name>
+    <width>60</width>
+    <format>#,##0.000</format>
+    <multi>1.0</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="13">
+    <name><![CDATA[<html><br>σ<br>(10<sup>-12</sup>)<br></html>]]></name>
+    <value>ra_err</value>
+    <val-name>error (abs) 129I/127I</val-name>
+    <width>50</width>
+    <format>#,##0.000</format>
+    <multi>1.0</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="14">
+    <name><![CDATA[<html><br>Χ²<sub>red</sub><br></html>]]></name>
+    <value>ra_err</value>
+    <val-name>error (abs) 129I/127I</val-name>
+    <width>42</width>
+    <format>#,##0.0</format>
+    <multi>1.0</multi>
+    <edit>false</edit>
+    <chi>true</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="15">
+    <name><![CDATA[<html><sup>129</sup>I/<sup>127</sup>I<br>final<br>(10<sup>-12</sup>)<br></html>]]></name>
+    <value>ra_fin</value>
+    <val-name>129I/127I std corrected</val-name>
+    <width>60</width>
+    <format>0.000</format>
+    <multi>1.0</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="16">
+    <name><![CDATA[<html><br>err<br>(%)</html>]]></name>
+    <value>ra_fin_errR</value>
+    <val-name>error (rel) 129I/127I std corrected</val-name>
+    <width>55</width>
+    <format>0.0</format>
+    <multi>100.0</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="17">
+    <name><![CDATA[<html><br>σ<br>(%)</html>]]></name>
+    <value>ra_fin_sigR</value>
+    <val-name>sigma (rel) 129I/127I std corrected</val-name>
+    <width>55</width>
+    <format>0.0</format>
+    <multi>100.0</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="18">
+    <name><![CDATA[<html><br>Χ²<sub>red</sub><br></html>]]></name>
+    <value>ra_fin_chi</value>
+    <val-name>Χ²(red) 129I/127I std corrected</val-name>
+    <width>42</width>
+    <format>0.0</format>
+    <multi>1.0</multi>
+    <edit>false</edit>
+    <chi>true</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="19">
+    <name><![CDATA[<html><br>time<br>(s)</html>]]></name>
+    <value>runtime</value>
+    <val-name>runtime</val-name>
+    <width>42</width>
+    <format>#0</format>
+    <multi>1.0</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="20">
+    <name><![CDATA[<html><br><br>cyc</html>]]></name>
+    <value>cycles</value>
+    <val-name>cycles</val-name>
+    <width>30</width>
+    <format>#,##0</format>
+    <multi>1.0</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="21">
+    <name />
+    <value>active</value>
+    <val-name>active</val-name>
+    <width>20</width>
+    <format />
+    <multi>1.0</multi>
+    <edit>true</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="22">
+    <name><![CDATA[<html><br><br>type</html>]]></name>
+    <value>sampletype</value>
+    <val-name>sampletype</val-name>
+    <width>45</width>
+    <format />
+    <multi>1.0</multi>
+    <edit>true</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+</passes_mean>
+

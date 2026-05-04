@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<standard date="Fri Sep 17 10:55:42 CEST 2010">
+  <std name="S555">
+    <ra>95.5</ra>
+    <ra_sig>0.0</ra_sig>
+    <active>true</active>
+      <blank>false</blank>
+  </std>
+  <std name="S2007">
+    <ra>28.1</ra>
+    <ra_sig>0.0</ra_sig>
+    <active>true</active>
+    <blank>false</blank>
+  </std>
+  <std name="S2007">
+    <ra>28.1</ra>
+    <ra_sig>0.0</ra_sig>
+    <active>true</active>
+    <blank>false</blank>
+  </std>
+  <std name="bl">
+    <ra></ra>
+    <ra_sig></ra_sig>
+    <active>true</active>
+    <blank>true</blank>
+  </std>
+ <std name="BeBl">
+    <ra></ra>
+    <ra_sig></ra_sig>
+    <active>true</active>
+    <blank>true</blank>
+  </std>
+</standard>
+

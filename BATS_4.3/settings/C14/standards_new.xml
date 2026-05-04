@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<standard date="Tue Jun 02 13:49:16 CEST 2015">
+  <std name="sample">
+    <ra />
+    <ra_sig />
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>0.0</delta>
+    <delta_nom>-25.0</delta_nom>
+    <delta_sig>0.0</delta_sig>
+    <F14C>0.0</F14C>
+    <F14C_sig>0.0</F14C_sig>
+    <active>false</active>
+    <blank>false</blank>
+  </std>
+  <std name="oxa1">
+    <ra />
+    <ra_sig />
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>-19.2</delta>
+    <delta_nom>-19.0</delta_nom>
+    <delta_sig>0.1</delta_sig>
+    <F14C>1.0526</F14C>
+    <F14C_sig>0.0</F14C_sig>
+    <active>true</active>
+    <blank>false</blank>
+  </std>
+  <std name="oxa2">
+    <ra />
+    <ra_sig />
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>-17.8</delta>
+    <delta_nom>-25.0</delta_nom>
+    <delta_sig>0.1</delta_sig>
+    <F14C>1.34066</F14C>
+    <F14C_sig>5.0E-4</F14C_sig>
+    <active>true</active>
+    <blank>false</blank>
+  </std>
+  <std name="bl">
+    <ra />
+    <ra_sig />
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>0.0</delta>
+    <delta_nom>-25.0</delta_nom>
+    <delta_sig>0.0</delta_sig>
+    <F14C>0.0</F14C>
+    <F14C_sig>0.0</F14C_sig>
+    <active>true</active>
+    <blank>true</blank>
+  </std>
+  <std name="bl_carb">
+    <ra />
+    <ra_sig />
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>0.0</delta>
+    <delta_nom>-25.0</delta_nom>
+    <delta_sig>0.0</delta_sig>
+    <F14C>0.0</F14C>
+    <F14C_sig>0.0</F14C_sig>
+    <active>true</active>
+    <blank>true</blank>
+  </std>
+  <std name="sample_hp">
+    <ra />
+    <ra_sig />
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>0.0</delta>
+    <delta_nom>-25.0</delta_nom>
+    <delta_sig>0.0</delta_sig>
+    <F14C>0.0</F14C>
+    <F14C_sig>0.0</F14C_sig>
+    <active>false</active>
+    <blank>false</blank>
+  </std>
+  <std name="tree_hp">
+    <ra />
+    <ra_sig />
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>0.0</delta>
+    <delta_nom>-25.0</delta_nom>
+    <delta_sig>0.0</delta_sig>
+    <F14C>0.0</F14C>
+    <F14C_sig>0.0</F14C_sig>
+    <active>false</active>
+    <blank>false</blank>
+  </std>
+  <std name="co2atm">
+    <ra />
+    <ra_sig />
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>0.0</delta>
+    <delta_nom>-25.0</delta_nom>
+    <delta_sig>0.0</delta_sig>
+    <F14C>0.0</F14C>
+    <F14C_sig>0.0</F14C_sig>
+    <active>false</active>
+    <blank>false</blank>
+  </std>
+  <std name="wilhelm">
+    <ra />
+    <ra_sig />
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>-23.5</delta>
+    <delta_nom>-23.5</delta_nom>
+    <delta_sig>0.0</delta_sig>
+    <F14C>9.9278</F14C>
+    <F14C_sig>2.0E-4</F14C_sig>
+    <active>true</active>
+    <blank>false</blank>
+  </std>
+  <std name="lnz">
+    <ra />
+    <ra_sig />
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>-28.8</delta>
+    <delta_nom>-25.0</delta_nom>
+    <delta_sig>0.1</delta_sig>
+    <F14C>1.0462</F14C>
+    <F14C_sig>0.0025</F14C_sig>
+    <active>true</active>
+    <blank>false</blank>
+  </std>
+  <std name="IAEA-C1">
+    <ra />
+    <ra_sig />
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>2.42</delta>
+    <delta_nom>-25.0</delta_nom>
+    <delta_sig>0.33</delta_sig>
+    <F14C>0.0</F14C>
+    <F14C_sig>1.0E-4</F14C_sig>
+    <active>true</active>
+    <blank>true</blank>
+  </std>
+  <std name="IAEA-C2">
+    <ra />
+    <ra_sig />
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>-8.25</delta>
+    <delta_nom>-25.0</delta_nom>
+    <delta_sig>0.31</delta_sig>
+    <F14C>0.4114</F14C>
+    <F14C_sig>3.0E-4</F14C_sig>
+    <active>false</active>
+    <blank>false</blank>
+  </std>
+  <std name="IAEA-C3">
+    <ra />
+    <ra_sig />
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>-24.724</delta>
+    <delta_nom>-25.0</delta_nom>
+    <delta_sig>0.041</delta_sig>
+    <F14C>1.2941</F14C>
+    <F14C_sig>6.0E-4</F14C_sig>
+    <active>false</active>
+    <blank>false</blank>
+  </std>
+  <std name="IAEA-C4">
+    <ra />
+    <ra_sig />
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>-23.96</delta>
+    <delta_nom>-25.0</delta_nom>
+    <delta_sig>0.62</delta_sig>
+    <F14C>0.0032</F14C>
+    <F14C_sig>0.0012</F14C_sig>
+    <active>false</active>
+    <blank>false</blank>
+  </std>
+  <std name="IAEA-C5">
+    <ra />
+    <ra_sig />
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>-25.49</delta>
+    <delta_nom>-25.0</delta_nom>
+    <delta_sig>0.72</delta_sig>
+    <F14C>0.2305</F14C>
+    <F14C_sig>2.0E-4</F14C_sig>
+    <active>false</active>
+    <blank>false</blank>
+  </std>
+  <std name="IAEA-C6">
+    <ra />
+    <ra_sig />
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>-10.449</delta>
+    <delta_nom>-25.0</delta_nom>
+    <delta_sig>0.033</delta_sig>
+    <F14C>1.506</F14C>
+    <F14C_sig>0.002</F14C_sig>
+    <active>false</active>
+    <blank>false</blank>
+  </std>
+  <std name="IAEA-C7">
+    <ra />
+    <ra_sig />
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>-14.48</delta>
+    <delta_nom>-25.0</delta_nom>
+    <delta_sig>0.21</delta_sig>
+    <F14C>0.4953</F14C>
+    <F14C_sig>0.0012</F14C_sig>
+    <active>false</active>
+    <blank>false</blank>
+  </std>
+  <std name="IAEA-C8">
+    <ra />
+    <ra_sig />
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>-18.31</delta>
+    <delta_nom>-25.0</delta_nom>
+    <delta_sig>0.11</delta_sig>
+    <F14C>0.1503</F14C>
+    <F14C_sig>0.0017</F14C_sig>
+    <active>false</active>
+    <blank>false</blank>
+  </std>
+  <std name="IAEA-C9">
+    <ra />
+    <ra_sig />
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>-23.9</delta>
+    <delta_nom>-25.0</delta_nom>
+    <delta_sig>1.5</delta_sig>
+    <F14C>0.0017</F14C>
+    <F14C_sig>5.0E-4</F14C_sig>
+    <active>false</active>
+    <blank>false</blank>
+  </std>
+  <std name="cstd">
+    <ra />
+    <ra_sig />
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>0.57</delta>
+    <delta_nom>-25.0</delta_nom>
+    <delta_sig>0.1</delta_sig>
+    <F14C>0.9447</F14C>
+    <F14C_sig>2.0E-4</F14C_sig>
+    <active>false</active>
+    <blank>false</blank>
+  </std>
+  <std name="standard">
+    <ra />
+    <ra_sig />
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>0.0</delta>
+    <delta_nom>-25.0</delta_nom>
+    <delta_sig>0.0</delta_sig>
+    <F14C>0.0</F14C>
+    <F14C_sig>0.0</F14C_sig>
+    <active>false</active>
+    <blank>false</blank>
+  </std>
+  <std name="nb">
+    <ra />
+    <ra_sig />
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>0.0</delta>
+    <delta_nom>-25.0</delta_nom>
+    <delta_sig>0.0</delta_sig>
+    <F14C>0.0</F14C>
+    <F14C_sig>0.0</F14C_sig>
+    <active>false</active>
+    <blank>false</blank>
+  </std>
+</standard>
+

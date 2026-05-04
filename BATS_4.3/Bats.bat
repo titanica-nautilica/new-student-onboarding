@@ -1,0 +1,1 @@
+java -jar -Xmx400M bats.jar

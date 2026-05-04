@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<standard date="Mon Aug 20 20:57:44 CEST 2018">
+  <std name="D22">
+    <ra>50.34</ra>
+    <ra_sig>0.0</ra_sig>
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta />
+    <delta_nom />
+    <delta_sig />
+    <F14C />
+    <F14C_sig />
+    <active>true</active>
+    <blank>false</blank>
+  </std>
+  <std name="blank">
+    <ra />
+    <ra_sig />
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta />
+    <delta_nom />
+    <delta_sig />
+    <F14C />
+    <F14C_sig />
+    <active>true</active>
+    <blank>true</blank>
+  </std>
+  <std name="bl">
+    <ra />
+    <ra_sig />
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta />
+    <delta_nom />
+    <delta_sig />
+    <F14C />
+    <F14C_sig />
+    <active>true</active>
+    <blank>true</blank>
+  </std>
+  <std name="E1">
+    <ra>4.88</ra>
+    <ra_sig>0.0</ra_sig>
+    <ba>1.0</ba>
+    <ba_nom>0.1</ba_nom>
+    <ba_sig />
+    <delta />
+    <delta_nom />
+    <delta_sig />
+    <F14C />
+    <F14C_sig />
+    <active>true</active>
+    <blank>false</blank>
+  </std>
+  <std name="b">
+    <ra />
+    <ra_sig />
+    <ba>1.0</ba>
+    <ba_nom>0.1</ba_nom>
+    <ba_sig />
+    <delta />
+    <delta_nom />
+    <delta_sig />
+    <F14C />
+    <F14C_sig />
+    <active>true</active>
+    <blank>true</blank>
+  </std>
+</standard>
+

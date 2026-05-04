@@ -1,0 +1,144 @@
+user_t:
+“institute” — auf varchar(100) change 
+“organisation” —  auf varchar(100) change
+“address_1”  auf varchar(80) change
+“address_2” —  auf varchar(80) change
+
+project_t:
+“project” —  auf varchar(100) change
+“order_nr”, varchar(60)
+“supervisor”, varchar(40)
+
+sample_t: 
+“left_over”, smallint(6)
+“storage”, string(100)
+
+preparartion_t: 
+“left_over”, smallint(6)
+
+calc_corr_t:
+“ra_norm”, double, not null, default value: 1 
+“ba_norm”, double, not null, default value: 0.975 
+“ra_nom”, not required anymore
+“ba_nom”, not required anymore
+
+calc_sample_t:
+“std_bl”, smallint(6)
+
+ALTER TABLE `db_ams`.`calc_sample_t` ADD COLUMN `std_bl` Smallint(6) AFTER `active`;
+
+sampletype_t:
+“f14c”, double
+“f14c”, double
+“d13c”, double
+“d13c_nom”, double
+“d13c_sig”, double
+“active”, smallint(6)
+“blank”, smallint(6)
+
+ALTER TABLE `db_ams`.`sampletype_t` ADD COLUMN `f14c` double AFTER `indexnr`,
+ ADD COLUMN `f14c_sig` double AFTER `f14c`,
+ ADD COLUMN `d13c` double AFTER `f14c_sig`,
+ ADD COLUMN `d13c_sig` double AFTER `d13c`,
+ ADD COLUMN `d13c_nom` double DEFAULT -25.0 AFTER `d13c_sig`,
+ ADD COLUMN `blank` smallint(6) NOT NULL DEFAULT 0 AFTER `d13c_nom`,
+ ADD COLUMN `active` smallint(6) NOT NULL DEFAULT 0 AFTER `blank`;
+
+ALTER TABLE `db_ams`.`project_t` 
+ADD COLUMN `advisor` VARCHAR(10) NULL DEFAULT NULL COMMENT '' AFTER `invoice_date`;
+
+
+Changes for saving calibration curve:
+
+ALTER TABLE `db_ams`.`target_t` 
+ADD COLUMN `cal_curve` VARCHAR(20) NULL DEFAULT NULL COMMENT 'Used calibration curve' AFTER `conc_c`;
+
+
+USE `db_ams`;
+CREATE 
+     OR REPLACE ALGORITHM = UNDEFINED 
+    DEFINER = `c14_admin`@`%.ethz.ch` 
+    SQL SECURITY DEFINER
+VIEW `target_v` AS
+    SELECT 
+        `target_t`.`sample_nr` AS `sample_nr`,
+        `target_t`.`prep_nr` AS `prep_nr`,
+        `target_t`.`target_nr` AS `target_nr`,
+        CONCAT(`target_t`.`sample_nr`,
+                _UTF8'.',
+                `target_t`.`prep_nr`,
+                _UTF8'.',
+                `target_t`.`target_nr`) AS `sample_id`,
+        CONCAT(`target_t`.`sample_nr`,
+                _UTF8'.',
+                `target_t`.`prep_nr`,
+                _UTF8'.',
+                `target_t`.`target_nr`) AS `target_id`,
+        `target_t`.`magazine` AS `magazine`,
+        `target_t`.`position` AS `position`,
+        `target_t`.`precis` AS `precis`,
+        `target_t`.`cycle_min` AS `cycle_min`,
+        `target_t`.`cycle_max` AS `cycle_max`,
+        `target_t`.`combustion` AS `combustion`,
+        `target_t`.`catalyst` AS `catalyst`,
+        `target_t`.`cathode_nr` AS `cathode_nr`,
+        `target_t`.`reactor_nr` AS `reactor_nr`,
+        `target_t`.`co2_init` AS `co2_init`,
+        `target_t`.`co2_final` AS `co2_final`,
+        `target_t`.`hydro_init` AS `hydro_init`,
+        `target_t`.`hydro_final` AS `hydro_final`,
+        `target_t`.`react_time` AS `react_time`,
+        `target_t`.`target_comment` AS `target_comment`,
+        `target_t`.`target_pressed` AS `target_pressed`,
+        `target_t`.`stop` AS `stop`,
+        `target_t`.`old_info` AS `old_info`,
+        `target_t`.`meas_comment` AS `meas_comment`,
+        `target_t`.`fm` AS `fm`,
+        `target_t`.`fm_sig` AS `fm_sig`,
+        `target_t`.`dc13` AS `dc13`,
+        `target_t`.`dc13_sig` AS `dc13_sig`,
+        `target_t`.`calcset` AS `calcset`,
+        `target_t`.`editallowed` AS `editallowed`,
+        `target_t`.`c14_age` AS `c14_age`,
+        `target_t`.`c14_age_sig` AS `c14_age_sig`,
+        `target_t`.`cal1sMin` AS `cal1sMin`,
+        `target_t`.`cal1sMax` AS `cal1sMax`,
+        `target_t`.`cal2sMin` AS `cal2sMin`,
+        `target_t`.`cal2sMax` AS `cal2sMax`,
+        `target_t`.`cal_curve` AS `cal_curve`,
+        `target_t`.`weight` AS `weight`,
+        `target_t`.`conc_n` AS `conc_n`,
+        `target_t`.`graphitized` AS `graphitized`,
+        `target_t`.`temp` AS `temp`,
+        `target_t`.`conc_c` AS `conc_c`,
+        `preparation_t`.`batch` AS `batch`,
+        `sample_t`.`type` AS `type`,
+        `sample_t`.`material` AS `material`,
+        `sample_t`.`fraction` AS `fraction`,
+        `sample_t`.`sampling_date` AS `sampling_date`,
+        `sample_t`.`not_tobedated` AS `not_tobedated`,
+        `sample_t`.`user_label` AS `user_label`,
+        `sample_t`.`user_label_nr` AS `user_label_nr`,
+        `sample_t`.`user_desc1` AS `user_desc1`,
+        `sample_t`.`user_desc2` AS `user_desc2`,
+        `project_t`.`project_nr` AS `project_nr`,
+        `project_t`.`project` AS `project`,
+        `project_t`.`priority` AS `priority`,
+        `project_t`.`status` AS `status`,
+        `project_t`.`advisor` AS `advisor`,
+        `user_t`.`user_nr` AS `user_nr`,
+        `user_t`.`first_name` AS `first_name`,
+        `user_t`.`last_name` AS `last_name`
+    FROM
+        ((((`sample_t`
+        JOIN `preparation_t`)
+        JOIN `target_t`)
+        JOIN `project_t`)
+        JOIN `user_t`)
+    WHERE
+        ((`sample_t`.`sample_nr` = `preparation_t`.`sample_nr`)
+            AND (`sample_t`.`sample_nr` = `target_t`.`sample_nr`)
+            AND (`preparation_t`.`prep_nr` = `target_t`.`prep_nr`)
+            AND (`sample_t`.`project_nr` = `project_t`.`project_nr`)
+            AND (`project_t`.`user_nr` = `user_t`.`user_nr`));
+
